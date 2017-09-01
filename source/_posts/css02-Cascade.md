@@ -1,7 +1,6 @@
 ---
 title: 重识css之---css层叠
 date: 2017-08-06 13:23:11
-comments: true
 tags:
 	- css
 categories:
@@ -24,7 +23,7 @@ categories:
 <font style="font-weight: bold;">层叠规则二：设定的永远大于继承的。</font>
 
 <font style="font-weight: bold;">层叠规则三：按照特殊性排序。</font>
-在所有的样式来源中，应用样式中特殊性高的中的规则，根据```I-C-E方法```计算特殊性，详细见：<a href="">重识css之---css特殊性</a>一文
+在所有的样式来源中，应用样式中特殊性高的中的规则，根据```I-C-E方法```计算特殊性，详细见：<a href="http://liuyav.com/2017/08/06/css03-specificity/">重识css之---css特殊性</a>一文
 
 <font style="font-weight: bold;">层叠规则四：顺序决定权重。</font>
 如果选择器特殊性一样，此时按照样式来源顺序，后者覆盖前者。

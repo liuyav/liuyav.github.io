@@ -2,9 +2,9 @@
 title: 重识css之---css继承
 date: 2017-08-06 11:21:26
 tags:
-	- css
+  - css
 categories:
-	- 前端
+  - 前端
 ---
 
 # css 三大特性之一继承
@@ -13,23 +13,20 @@ categories:
 ## 如何使用
 最直观的用法就是要知道哪些属性是拥有可继承性的，这样就能合理的使用```css```继承性，在```css```中以```text-```、```font-```、```line-```开头的属性都是可以继承的<!-- more -->
 
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<style>
-			body {color: red}
-		</style>
-	</head>
-	<body>
-		<div>
-			<p>继承body的字体颜色</p>
-			<span>继承body的字体颜色</span>
-		</div>
-	</body>
-
-<a href="http://liuyav.com/study/css/example01-inhert.html" style="font-weight: bold">点击查看效果</a>
+{% codeblock lang:html 子集继承父级示例 http://study.liuyav.com/css/example01-inhert.html 点击查看效果 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body style="color: red">
+  <div>
+    <p>继承body的字体颜色</p>
+    <span>继承body的字体颜色</span>
+  </div>
+</body>
+{% endcodeblock %}
 
 ## 继承中的特殊性
 1. ```<a>```标签的不能继承字体颜色
@@ -38,21 +35,21 @@ categories:
 ## 处理特殊性
 在css中，所有的css属性，都是一个值叫```inherit```，他可以使一些没有继承性的元素，强制继承父级的样式，例如```<a>```标签。
 
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-	</head>
-	<body>
-		<div style="color: blue">
-			<p>p标签可以继承父级颜色</p>
-			<a href="###" style="color: inherit;">使用inherit让a强制继承父级颜色</a>
-		</div>
-	</body>
-	</html>
-
-<a href="http://liuyav.com/study/css/example01-inhert2.html" style="font-weight: bold">点击查看效果</a>
+{% codeblock lang:html inherit属性强制继承 http://study.liuyav.com/css/example01-inhert2.html 点击查看效果 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div style="color: blue">
+    <p>p标签可以继承父级颜色</p>
+    <a href="###" style="color: inherit;">使用inherit让a强制继承父级颜色</a>
+  </div>
+</body>
+</html>
+{% endcodeblock %}
 
 对于```<h>```标签字体大小不能继承来自于浏览器的缺省样式。浏览器中默认的字体大小为```12px```，2级标题的大小非```12px```，而是缺省的```1.5em```，标题字体原本就是比正文大一些，所有这样也是合理的。
 
@@ -68,6 +65,6 @@ categories:
 
 
 
-	
+  
 
 
