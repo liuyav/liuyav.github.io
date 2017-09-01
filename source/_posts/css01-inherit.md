@@ -13,22 +13,20 @@ categories:
 ## 如何使用
 最直观的用法就是要知道哪些属性是拥有可继承性的，这样就能合理的使用```css```继承性，在```css```中以```text-```、```font-```、```line-```开头的属性都是可以继承的<!-- more -->
 
-{% codeblock lang:html %}
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-  </head>
-  <body style="color: red">
-    <div>
-      <p>继承body的字体颜色</p>
-      <span>继承body的字体颜色</span>
-    </div>
-  </body>
+{% codeblock lang:html 子集继承父级示例 http://study.liuyav.com/css/example01-inhert.html 点击查看效果 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body style="color: red">
+  <div>
+    <p>继承body的字体颜色</p>
+    <span>继承body的字体颜色</span>
+  </div>
+</body>
 {% endcodeblock %}
-
-<a href="http://liuyav.com/study/css/example01-inhert.html" style="font-weight: bold">点击查看效果</a>
 
 ## 继承中的特殊性
 1. ```<a>```标签的不能继承字体颜色
@@ -37,7 +35,7 @@ categories:
 ## 处理特殊性
 在css中，所有的css属性，都是一个值叫```inherit```，他可以使一些没有继承性的元素，强制继承父级的样式，例如```<a>```标签。
 
-{% codeblock lang:html %}
+{% codeblock lang:html inherit属性强制继承 http://study.liuyav.com/css/example01-inhert2.html 点击查看效果 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,9 +50,6 @@ categories:
 </body>
 </html>
 {% endcodeblock %}
-
-
-<a href="http://liuyav.com/study/css/example01-inhert2.html" style="font-weight: bold">点击查看效果</a>
 
 对于```<h>```标签字体大小不能继承来自于浏览器的缺省样式。浏览器中默认的字体大小为```12px```，2级标题的大小非```12px```，而是缺省的```1.5em```，标题字体原本就是比正文大一些，所有这样也是合理的。
 
