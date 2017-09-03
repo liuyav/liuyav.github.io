@@ -94,7 +94,7 @@ div {
 ## CSSComb
 当然，按照上述的语法规则一下子改变过来可能会降低开发速度，在 sublime text3 下有一个插件叫 ```CSSComb```，官网上有个<a href="http://csscomb.com/config" style="font-weight: bold">Build config</a>可根据自己选项自动生成配置，在sublime下安装插件```CSSComb```，在```Preferences```->```Package Settings```->```CSSComb```->```Setting-User```将生成的配置粘贴在上面，以后整理格式，只需要在当前```css```文件右键运行```Run CSSComb```即可整理```CSS```代码格式。
 
-## 结语
+# 结语
 本文由个人理解和参考整理，仅供学习参考，欢迎留言交流~~
 
 

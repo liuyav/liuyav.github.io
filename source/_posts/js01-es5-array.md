@@ -128,7 +128,7 @@ var sum = num.reduceRight(function(prev, next, index, arr) {
 alert(sum);     //15
 {% endcodeblock %}
 
-## 结语
+# 结语
 本文由个人理解和参考整理，仅供学习参考，欢迎留言交流~~
 
 

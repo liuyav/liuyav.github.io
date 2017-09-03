@@ -2,7 +2,7 @@
 title: vue特性介绍
 date: 2017-09-03 16:31:19
 tags:
-  - js
+  - javascript
   - vue
 categories:
   - 前端
@@ -111,5 +111,5 @@ VM view-model 视图模型
 </html>
 {% endcodeblock %}
 
-## 结语
+# 结语
 本文由个人理解和参考整理，仅供学习参考，欢迎留言交流~~
