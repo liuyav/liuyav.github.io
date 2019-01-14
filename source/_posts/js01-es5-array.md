@@ -1,5 +1,5 @@
 ---
-title: ECMAScript5 新特性学习（一）Array  
+title: 读书笔记 -- ECMAScript5 新特性学习（一）Array
 date: 2017-09-03 00:01:10
 tags:
   - javascript
