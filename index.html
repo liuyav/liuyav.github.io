@@ -283,6 +283,170 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/15/sass-01/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liuyav">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="文字太轻 回忆太重">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/15/sass-01/" itemprop="url">sass 基本使用（一）变量</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-15T14:51:01+08:00">
+                2019-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2019/07/15/sass-01/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2019/07/15/sass-01/" class="cy_cmt_count" data-xid="2019/07/15/sass-01/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="sass-变量"><a href="#sass-变量" class="headerlink" title="sass 变量"></a>sass 变量</h1><p>本文讨论有关 sass 语法，变量部分。文中案列可进行复制，在sass的一个在线运行网站上进行测试 <strong><a href="https://www.sassmeister.com/" target="_blank" rel="noopener">sass在线转换</a></strong></p>
+<h2 id="变量分类"><a href="#变量分类" class="headerlink" title="变量分类"></a>变量分类</h2><ol>
+<li>普通变量</li>
+<li>默认变量</li>
+<li>特殊变量</li>
+<li>多值变量</li>
+<li>全局变量</li>
+</ol>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/15/sass-01/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/14/three01-assembly/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -302,7 +466,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/14/three01-assembly/" itemprop="url">读书笔记 -- threejs 三大组件</a></h1>
+                <a class="post-title-link" href="/2019/01/14/three01-assembly/" itemprop="url">读书笔记 --- threejs 介绍</a></h1>
         
 
         <div class="post-meta">
@@ -386,24 +550,24 @@
 
       
         
-          
-            <h1 id="三大组件"><a href="#三大组件" class="headerlink" title="三大组件"></a>三大组件</h1><p><code>threejs</code> 的三大组件包括：场景、相机、渲染器，有了这三样东西才能把东西渲染上去。</p>
-<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><ol>
-<li><code>threejs</code> 里面的场景只有一种 <code>new THREE.Scene()</code> </li>
+          <h2 id="三大组件"><a href="#三大组件" class="headerlink" title="三大组件"></a>三大组件</h2><p>threejs 的三大组件包括：场景、相机、渲染器，有了这三样东西才能把东西渲染上去。</p>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><ol>
+<li>threejs 里面的场景只有一种 <code>new THREE.Scene()</code> </li>
 <li>场景是所有物体的容器，如果要显示这个物体，需要把这个物体加入容器</li>
 </ol>
-<h2 id="相机"><a href="#相机" class="headerlink" title="相机"></a>相机</h2><ol>
+<h3 id="相机"><a href="#相机" class="headerlink" title="相机"></a>相机</h3><ol>
 <li>相机决定了场景中的哪个角度的物体会显示出来，相机像人的眼睛一样，站在不同角度，抬头或者低头可以看到不同的风景</li>
-<li>相机有很多种，不同的相机可以达到不同的效果</li>
-</ol>
-<h2 id="渲染器"><a href="#渲染器" class="headerlink" title="渲染器"></a>渲染器</h2><ol>
-<li>渲染器决定了渲染结果应该在页面的什么元素上，以什么样方式来绘制</li>
-</ol>
-
-          
+<li>相机有很多种，不同的相机可以达到不同的效果
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/14/three01-assembly/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </li></ol></div>
     
     
     
@@ -466,7 +630,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/03/js01-es5-array/" itemprop="url">读书笔记 -- ECMAScript5 新特性学习（一）Array</a></h1>
+                <a class="post-title-link" href="/2017/09/03/js01-es5-array/" itemprop="url">读书笔记 --- ECMAScript5 新特性学习（一）Array</a></h1>
         
 
         <div class="post-meta">
@@ -637,7 +801,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
