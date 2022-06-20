@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/liuyav/liuyav.github.io/compare/v0.1.1...v0.1.2) (2022-06-20)
+
+
+### ✨ Features | 新功能
+
+* normalize.css处理css初始样式 ([41f5646](https://github.com/liuyav/liuyav.github.io/commit/41f564691d38228d124f8d1b2e21976f31fd3da1))
+* react-slick css样式依赖 ([332f59b](https://github.com/liuyav/liuyav.github.io/commit/332f59bda50dcf7b820ffa89b1368186cc9c8d39))
+* react-slick图片滑动组件及其类型声明依赖添加 ([43eabcf](https://github.com/liuyav/liuyav.github.io/commit/43eabcf32fcb7cef6b268b392e74a37cc579fd03))
+* sass、sass-loader、axios添加 ([0d8fe0f](https://github.com/liuyav/liuyav.github.io/commit/0d8fe0f72fe4a72712859b53a4995472d0496c12))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修改添加@别名后找不到类型声明的错误 ([2425fb0](https://github.com/liuyav/liuyav.github.io/commit/2425fb056fc27fbb264dbc30a1c4a65f075193e3))
+
 ### 0.1.1 (2022-06-20)
 
 
