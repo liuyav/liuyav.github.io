@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5", // 编译的目标
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,12 +13,20 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": false,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@": [
+        "src/"
+      ]
+    }
   },
   "include": [
     "src"
