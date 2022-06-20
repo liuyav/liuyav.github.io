@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  li {
+    padding-left: 40px;
+    font-size: 14px;
+    height: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      &[class='active'] {
+        color: #40a9ff;
+      }
+    }
+  }
+}

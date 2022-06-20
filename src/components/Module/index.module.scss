@@ -1,0 +1,18 @@
+@import '@/styles/variables.scss';
+
+.wrap {
+  margin: 0 auto;
+  padding: calc($moduleSpacing) 0;
+  width: $contentWidth;
+  position: relative;
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+:export {
+  bgColor: $bgColor;
+  moduleColor: $moduleColor;
+}

@@ -1,0 +1,18 @@
+@import '@/styles/variables.scss';
+
+.header {
+  height: $headerHeight;
+  background: $moduleColor;
+  @include borderWidthShadow(bottom, 6px, $borderColor);
+  & div[class='ant-affix'] {
+    background: $moduleColor;
+    @include borderWidthShadow(bottom, 6px, $borderColor);
+  }
+  .headerContent {
+    height: $headerHeight;
+    width: $contentWidth;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

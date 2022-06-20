@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  background: $bgColor;
+}

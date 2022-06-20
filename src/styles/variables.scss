@@ -1,0 +1,48 @@
+// 颜色配置
+$bgColor: #fafafa;
+$moduleColor: #fff;
+$borderColor: #eaeaea;
+
+// 内容宽度
+$contentWidth: 1200px;
+
+// 间距
+$moduleSpacing: 40px;
+$contentSpacing: 20px;
+
+// 头部
+$headerHeight: 60px;
+
+// 文章标题
+%articleTitle {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+// 计算列表项宽度
+@function ListItemWidth($num, $space) {
+  @return ($contentWidth - ($num - 1) * $space) / $num;
+}
+
+// 列表布局
+@mixin listDisPlay($displayNum, $itemSpace) {
+  display: flex;
+  li {
+    width: ListItemWidth($displayNum, $itemSpace);
+    &:not(:first-child) {
+      margin-left: $itemSpace;
+    }
+    &:nth-child(n + #{$displayNum + 1}) {
+      margin-top: $itemSpace;
+    }
+  }
+}
+
+// 带阴影的边框
+@mixin borderWidthShadow($dir, $size, $color) {
+  border-#{$dir}: 1px solid $color;
+  box-shadow: 0 0 $size 1px $color;
+}
