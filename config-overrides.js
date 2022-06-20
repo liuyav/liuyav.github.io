@@ -1,20 +1,18 @@
-const {
-  override,
-  addWebpackModuleRule,
-  addWebpackResolve,
-} = require("customize-cra");
-const path = require("path");
+const { override, addWebpackModuleRule, addWebpackResolve, addWebpackAlias } = require('customize-cra');
+const path = require('path');
 
 module.exports = {
   webpack: override(
     addWebpackModuleRule({
       test: /\.tsx?$/,
       exclude: /node_modules/,
-      use: ["babel-loader", "ts-loader"],
+      use: ['babel-loader', 'ts-loader']
+    }),
+    addWebpackAlias({
+      '@': path.resolve(__dirname, './src')
     }),
     addWebpackResolve({
-      alias: { "@": path.resolve(__dirname, "./src") },
-      extensions: [".ts", ".tsx", ".js", ".jsx"],
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
     })
-  ),
+  )
 };
