@@ -1,0 +1,19 @@
+@import '../index.module.scss';
+
+.playerWrap {
+  height: 80px;
+  border-top: 1px solid $asideItemColor;
+  background: #f5f5f5;
+}
+
+.playerControl {
+  font-size: 24px;
+  span[role='img'] {
+    cursor: pointer;
+  }
+}
+
+.lrcContent {
+  height: 200px;
+  overflow: scroll;
+}

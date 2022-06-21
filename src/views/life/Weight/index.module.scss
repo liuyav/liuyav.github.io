@@ -1,0 +1,9 @@
+@import '@/styles/variables.scss';
+
+.dietRecord {
+  display: flex;
+  margin-top: $moduleSpacing;
+  & div {
+    flex: 1;
+  }
+}

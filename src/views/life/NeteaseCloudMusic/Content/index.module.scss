@@ -1,0 +1,106 @@
+@import '../index.module.scss';
+
+.content {
+  padding: calc($contentSpacing / 1.5) $contentSpacing;
+  width: calc(100% - $asideWidth);
+}
+
+.contentHeader {
+  display: flex;
+  align-items: baseline;
+  li {
+    font-size: 14px;
+    line-height: 36px;
+    padding-right: $moduleSpacing;
+    cursor: pointer;
+
+    &[class='active'] {
+      font-size: 18px;
+      font-weight: 600;
+      position: relative;
+      &::before {
+        content: '';
+        width: calc(100% - 50px);
+        position: absolute;
+        left: 5px;
+        bottom: 0;
+        height: 2px;
+        background: red;
+      }
+    }
+  }
+}
+
+.songSheetRecommend {
+  padding: $contentSpacing 0;
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    span[role='img'] {
+      margin-left: calc($contentSpacing / 3);
+      position: relative;
+      top: -1px;
+      font-weight: light;
+      font-size: 14px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $contentSpacing;
+    li {
+      width: 168px;
+      margin-left: $contentSpacing;
+      cursor: pointer;
+      &:nth-child(5n + 1) {
+        margin-left: 0;
+      }
+      &:nth-child(n + 6) {
+        margin-top: $contentSpacing;
+      }
+
+      div {
+        position: relative;
+        img {
+          width: 100%;
+        }
+        b {
+          position: absolute;
+          right: calc($contentSpacing / 4);
+          top: calc($contentSpacing / 4);
+          color: #fff;
+          font-weight: normal;
+        }
+        i {
+          position: absolute;
+          right: calc($contentSpacing / 4);
+          bottom: calc($contentSpacing / 4);
+          color: #fff;
+          font-style: normal;
+          font-size: 35px;
+          opacity: 0;
+          transform: scale(1.5);
+          transition: all 0.5s;
+          color: #fff;
+
+          svg {
+            border-radius: 50%;
+            background-color: red;
+          }
+        }
+        &:hover {
+          i {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+
+      p {
+        padding-top: calc($contentSpacing / 3);
+        line-height: 1.4;
+      }
+    }
+  }
+}

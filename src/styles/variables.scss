@@ -28,7 +28,7 @@ $headerHeight: 60px;
 }
 
 // 列表布局
-@mixin listDisPlay($displayNum, $itemSpace) {
+@mixin listDisplay($displayNum, $itemSpace) {
   display: flex;
   li {
     width: ListItemWidth($displayNum, $itemSpace);

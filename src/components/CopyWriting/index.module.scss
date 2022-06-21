@@ -1,0 +1,12 @@
+@import '@/styles/variables.scss';
+
+.title {
+  padding: $contentSpacing 0;
+  font-size: 20px;
+  text-align: left;
+  p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: $contentSpacing;
+  }
+}

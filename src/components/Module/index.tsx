@@ -1,10 +1,12 @@
 import React, { ElementType, ReactElement } from 'react';
+import { Divider, DividerProps } from 'antd';
 import styles from './index.module.scss';
-
 interface Props {
   children: ReactElement;
   primary?: boolean;
   title?: string;
+  // :TODO
+  dir?: any;
 }
 
 /**
@@ -14,11 +16,18 @@ interface Props {
  * @returns ElementType
  */
 const Module: ElementType = (props: Props) => {
-  const { primary = false, children, title = '' } = props;
+  const { primary = false, children, title = '', dir = 'undefined' } = props;
+
   return (
     <div style={{ backgroundColor: primary ? styles.moduleColor : styles.bgColor }}>
       <div className={styles.wrap}>
-        {title && <h2>{title}</h2>}
+        {title && dir ? (
+          <Divider orientation={dir}>
+            <h2>{title}</h2>
+          </Divider>
+        ) : (
+          <>{title && <h2>{title}</h2>}</>
+        )}
         {children}
       </div>
     </div>

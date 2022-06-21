@@ -31,7 +31,7 @@
 // 最新文章
 .latestArticle {
   margin-top: $moduleSpacing;
-  @include listDisPlay(3, $contentSpacing);
+  @include listDisplay(3, $contentSpacing);
 
   li {
     background: $bgColor;
@@ -151,7 +151,7 @@
 // 推荐歌单
 .singList {
   margin-top: $moduleSpacing;
-  @include listDisPlay(4, $contentSpacing);
+  @include listDisplay(4, $contentSpacing);
   li {
     display: flex;
     flex-wrap: wrap;
