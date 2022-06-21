@@ -2,10 +2,10 @@
 
 .footer {
   padding: $contentSpacing;
-  background: $moduleColor;
+  background: $moduleSecond;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @include borderWidthShadow(top, 4px, $bgColor);
+  @include borderWidthShadow(top, 4px, $modulePrimary);
 }

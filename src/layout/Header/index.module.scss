@@ -2,10 +2,10 @@
 
 .header {
   height: $headerHeight;
-  background: $moduleColor;
+  background: $moduleSecond;
   @include borderWidthShadow(bottom, 6px, $borderColor);
   & div[class='ant-affix'] {
-    background: $moduleColor;
+    background: $moduleSecond;
     @include borderWidthShadow(bottom, 6px, $borderColor);
   }
   .headerContent {

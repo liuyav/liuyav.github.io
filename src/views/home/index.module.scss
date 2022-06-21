@@ -20,7 +20,7 @@
     box-shadow: 0 1px 10px 1px #d5d5d5;
   }
   div {
-    background: $moduleColor;
+    background: $moduleSecond;
     width: 347px;
     padding: $contentSpacing;
     text-align: center;
@@ -34,7 +34,7 @@
   @include listDisplay(3, $contentSpacing);
 
   li {
-    background: $bgColor;
+    background: $modulePrimary;
     flex-direction: column;
     padding: $contentSpacing;
 
@@ -82,7 +82,7 @@
   grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
   margin-top: $moduleSpacing;
   li {
-    background: $moduleColor;
+    background: $moduleSecond;
     padding: $contentSpacing;
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +155,7 @@
   li {
     display: flex;
     flex-wrap: wrap;
-    background: $bgColor;
+    background: $modulePrimary;
 
     h3 {
       padding: calc($moduleSpacing / 3);

@@ -21,6 +21,10 @@ description.set(
 );
 description.set('联系', '所有关系变淡的原因：一个不说，一个不问或者一个问得尴尬，一个答得敷衍。');
 
+/**
+ * 手稿组件
+ * @returns ElementType
+ */
 const CopyWriting: ElementType = () => {
   const location = useLocation();
   const classifyText: string = (Classify as any)[location.pathname as any];
