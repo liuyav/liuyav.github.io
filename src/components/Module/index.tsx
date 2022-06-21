@@ -18,9 +18,10 @@ interface Props {
 const Module: ElementType = (props: Props) => {
   const { primary = false, children, title = '', dir = 'undefined' } = props;
 
+  const classNames = dir !== 'undefined' ? `${styles.wrap} ${styles.isDivider}` : `${styles.wrap}`;
   return (
     <div style={{ backgroundColor: primary ? styles.moduleColor : styles.bgColor }}>
-      <div className={styles.wrap}>
+      <div className={classNames}>
         {title && dir ? (
           <Divider orientation={dir}>
             <h2>{title}</h2>

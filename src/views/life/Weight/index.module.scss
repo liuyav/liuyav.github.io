@@ -5,5 +5,8 @@
   margin-top: $moduleSpacing;
   & div {
     flex: 1;
+    [class~='ant-divider'] {
+      margin-top: calc($contentSpacing / 2);
+    }
   }
 }

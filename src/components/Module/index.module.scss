@@ -2,9 +2,15 @@
 
 .wrap {
   margin: 0 auto;
-  padding: calc($moduleSpacing) 0;
+  padding: $moduleSpacing 0;
   width: $contentWidth;
   position: relative;
+  &.isDivider {
+    padding: calc($moduleSpacing + $contentSpacing) 0;
+    div[class~='ant-divider'] {
+      padding-bottom: $contentSpacing;
+    }
+  }
   div[class~='ant-divider'] {
     margin: 0;
   }

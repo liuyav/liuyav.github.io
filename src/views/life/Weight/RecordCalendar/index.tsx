@@ -7,7 +7,7 @@ const RecordCalendar: ElementType = () => {
   };
 
   return (
-    <div className="site-calendar-customize-header-wrapper">
+    <div>
       <Calendar
         fullscreen={false}
         headerRender={({ value, type, onChange, onTypeChange }) => {
