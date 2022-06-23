@@ -1,0 +1,40 @@
+@import '@/styles/variables.scss';
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  min-height: 400px;
+  > li {
+    margin-bottom: $contentSpacing;
+    height: 165px;
+    h3 {
+      margin-bottom: $contentSpacing;
+    }
+    .tools {
+      margin-bottom: calc($contentSpacing / 2);
+      font-size: 10px;
+      color: #7e7a78;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      > span,
+      > ul {
+        margin-right: $moduleSpacing / 1.4;
+        &:nth-child(2) {
+          margin-right: calc($contentSpacing / 4);
+        }
+      }
+      span[role='img'] {
+        margin-right: calc($contentSpacing / 4);
+      }
+    }
+
+    .tags {
+      display: flex;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+}

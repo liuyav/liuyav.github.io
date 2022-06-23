@@ -1,4 +1,4 @@
-const { override, addWebpackModuleRule, addWebpackResolve, addWebpackAlias } = require('customize-cra');
+const { override, addWebpackModuleRule, addWebpackResolve, addWebpackAlias, overrideDevServer } = require('customize-cra');
 const path = require('path');
 
 module.exports = {
@@ -14,5 +14,21 @@ module.exports = {
     addWebpackResolve({
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
     })
-  )
+  ),
+  devServer: overrideDevServer((config) => {
+    return {
+      ...config,
+      // 服务开启gzip
+      compress: true,
+      proxy: {
+        '/api': {
+          target: 'http://127.0.0.1:7001',
+          changeOrigin: true
+          // pathRewrite: {
+          //   '^/api': '/'
+          // }
+        }
+      }
+    };
+  })
 };

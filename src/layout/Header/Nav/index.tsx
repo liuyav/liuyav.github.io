@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const menuConfig = [
   { path: '/', name: '首页' },
   { path: '/life', name: '生活' },
-  { path: '/article', name: '技术' },
+  { path: '/blog', name: '博客' },
   { path: '/about', name: '关于' },
   { path: '/contact', name: '联系' }
 ];

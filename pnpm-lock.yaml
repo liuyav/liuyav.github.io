@@ -7,6 +7,7 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.4
   '@testing-library/react': ^13.3.0
   '@testing-library/user-event': ^13.5.0
+  '@types/axios': ^0.14.0
   '@types/jest': ^27.5.2
   '@types/node': ^16.11.41
   '@types/react': ^18.0.14
@@ -30,6 +31,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   husky: ^8.0.1
   lint-staged: ^13.0.2
+  moment: ^2.29.3
   normalize.css: ^8.0.1
   prettier: ^2.7.1
   react: ^18.2.0
@@ -52,6 +54,7 @@ dependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 13.5.0
+  '@types/axios': 0.14.0
   '@types/jest': 27.5.2
   '@types/node': 16.11.41
   '@types/react': 18.0.14
@@ -61,6 +64,7 @@ dependencies:
   '@types/react-slick': 0.23.8
   antd: 4.21.3_biqbaboplfbrettd7655fr4n2y
   axios: 0.27.2
+  moment: 2.29.3
   normalize.css: 8.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2488,6 +2492,15 @@ packages:
 
   /@types/aria-query/4.2.2:
     resolution: {integrity: sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==}
+    dev: false
+
+  /@types/axios/0.14.0:
+    resolution: {integrity: sha512-KqQnQbdYE54D7oa/UmYVMZKq7CO4l8DEENzOKc4aBRwxCXSlJXGz83flFx5L7AWrOQnmuN3kVsRdt+GZPPjiVQ==}
+    deprecated: This is a stub types definition for axios (https://github.com/mzabriskie/axios). axios provides its own type definitions, so you don't need @types/axios installed!
+    dependencies:
+      axios: 0.27.2
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /@types/babel__core/7.1.19:
