@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/liuyav/liuyav.github.io/compare/v0.1.2...v0.1.3) (2022-06-23)
+
+
+### 💄 Styles | 风格
+
+* 优化注释、scss变量修改 ([be034e8](https://github.com/liuyav/liuyav.github.io/commit/be034e80e10db67ae27a1404f16253509101f97a))
+
+
+### ✨ Features | 新功能
+
+* 博客列表页完成、接口对接完成 ([2323511](https://github.com/liuyav/liuyav.github.io/commit/23235115a71eb259728bf705fbc81089d1784adc))
+* copyWriting增加标题参数 ([0de5384](https://github.com/liuyav/liuyav.github.io/commit/0de5384e10379e7b300dcf552b2faf9aafb2bc9b))
+
 ### [0.1.2](https://github.com/liuyav/liuyav.github.io/compare/v0.1.1...v0.1.2) (2022-06-20)
 
 
