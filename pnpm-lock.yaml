@@ -47,6 +47,7 @@ specifiers:
   standard-version: ^9.5.0
   ts-loader: ^9.3.0
   typescript: ^4.7.4
+  vditor: ^3.8.15
   web-vitals: ^2.1.4
 
 dependencies:
@@ -76,6 +77,7 @@ dependencies:
   sass-loader: 13.0.0_sass@1.52.3
   slick-carousel: 1.8.1
   typescript: 4.7.4
+  vditor: 3.8.15
   web-vitals: 2.1.4
 
 devDependencies:
@@ -4915,6 +4917,10 @@ packages:
 
   /didyoumean/1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
+    dev: false
+
+  /diff-match-patch/1.0.5:
+    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
     dev: false
 
   /diff-sequences/27.5.1:
@@ -11667,6 +11673,12 @@ packages:
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /vditor/3.8.15:
+    resolution: {integrity: sha512-BYSBNUuhtvOfu1OU+NhS7R6TcrNP0UmQ8Vtbzq9BnLoG1uIHPZaTjtJIv00OPqHEcZa4KpR7mU+n9P+i+9SHuA==}
+    dependencies:
+      diff-match-patch: 1.0.5
     dev: false
 
   /w3c-hr-time/1.0.2:

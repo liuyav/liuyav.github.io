@@ -1,6 +1,6 @@
 import request from '@/utils/request';
 import type { AxiosResponse } from 'axios';
-import { ClassifyTag, Classify, ArticleParams, ArticleResponse } from './types';
+import { ClassifyTag, Classify, ArticleParams, ArticleResponse, Article } from './types';
 
 /**
  * 根据分类id查询分类
@@ -41,5 +41,17 @@ export const queryArticleListByKeyword = async (params: ArticleParams): Promise<
     method: 'get',
     url: '/articles/keyword',
     params
+  });
+};
+
+/**
+ * 根据文章id查询文章详情
+ * @param params id
+ * @returns Article
+ */
+export const queryArticleDetail = async (params: { id: string }): Promise<AxiosResponse<Article>> => {
+  return await request({
+    method: 'get',
+    url: `/article/${params.id}`
   });
 };

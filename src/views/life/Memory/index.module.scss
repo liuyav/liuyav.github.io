@@ -2,5 +2,5 @@
 
 .timeRecord {
   display: flex;
-  margin-top: $moduleSpacing;
+  margin-top: calc($moduleSpacing + $contentSpacing);
 }

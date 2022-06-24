@@ -2,7 +2,7 @@
 
 .dietRecord {
   display: flex;
-  margin-top: $moduleSpacing;
+  margin-top: calc($moduleSpacing + $contentSpacing);
   & div {
     flex: 1;
     [class~='ant-divider'] {

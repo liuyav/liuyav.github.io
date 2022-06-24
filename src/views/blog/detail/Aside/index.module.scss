@@ -1,0 +1,21 @@
+@import '@/styles/variables.scss';
+
+.articleOutlineBox {
+  div[class='vditor-outline'] {
+    display: block;
+    ul {
+      padding-left: 0;
+      li {
+        > span {
+          padding: 5px;
+        }
+        svg {
+          margin-right: 5px;
+          &[class='vditor-outline__action'] {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

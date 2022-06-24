@@ -1,0 +1,16 @@
+@import '@/styles/variables.scss';
+
+.detailBox {
+  display: flex;
+  margin-top: -$contentSpacing;
+  .contentBox {
+    width: 880px;
+    margin-right: $contentSpacing;
+  }
+  .asideBox {
+    width: 300px;
+  }
+}
+
+.widthBorderBottom div {
+}

@@ -8,7 +8,7 @@ import ArticleList from './ArticleList';
 import { queryClassify, queryTags, queryArticleListByKeyword } from '@/api/blog';
 import { Classify, ClassifyTag, Article, ArticleParams } from '@/api/blog/types';
 
-import { Divider } from 'antd';
+import { Affix, Divider } from 'antd';
 import styles from './index.module.scss';
 
 const Blog: ElementType = () => {
@@ -107,16 +107,18 @@ const Blog: ElementType = () => {
   return (
     <>
       <Module>
-        <CopyWriting />
+        <CopyWriting title="博客" />
       </Module>
 
-      <Module primary>
-        {/* 分类 */}
-        <ArticleClassify classify={classify} curClassify={listParams.classify} setCurClassify={setCurClassify} />
-        <Divider />
-        {/* 标签 */}
-        <ArticleTags tags={tags} curTag={listParams.tag} setCurTag={setCurTag} />
-      </Module>
+      <Affix offsetTop={60} className={styles.widthBorderBottom}>
+        <Module primary>
+          {/* 分类 */}
+          <ArticleClassify classify={classify} curClassify={listParams.classify} setCurClassify={setCurClassify} />
+          <Divider />
+          {/* 标签 */}
+          <ArticleTags tags={tags} curTag={listParams.tag} setCurTag={setCurTag} />
+        </Module>
+      </Affix>
 
       <Module>
         <div className={styles.content}>

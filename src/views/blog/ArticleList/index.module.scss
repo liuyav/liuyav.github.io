@@ -7,12 +7,10 @@
   min-height: 400px;
   > li {
     margin-bottom: $contentSpacing;
-    height: 165px;
     h3 {
       margin-bottom: $contentSpacing;
     }
     .tools {
-      margin-bottom: calc($contentSpacing / 2);
       font-size: 10px;
       color: #7e7a78;
       display: inline-flex;
@@ -21,7 +19,7 @@
       > span,
       > ul {
         margin-right: $moduleSpacing / 1.4;
-        &:nth-child(2) {
+        &:nth-child(3) {
           margin-right: calc($contentSpacing / 4);
         }
       }
@@ -35,6 +33,7 @@
     }
     p {
       line-height: 24px;
+      margin: calc($contentSpacing / 2) 0;
     }
   }
 }

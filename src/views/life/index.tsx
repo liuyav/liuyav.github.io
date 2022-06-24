@@ -10,7 +10,7 @@ const Life: ElementType = () => {
   return (
     <>
       <Module>
-        <CopyWriting />
+        <CopyWriting title="生活" />
       </Module>
       <Module dir="left" title="我相信这世上，有一个温暖的人，只为我悲喜，为我阻挡人间的锋利。" primary>
         <Memory />

@@ -25,6 +25,11 @@ const ArticleList: ElementType = memo((props: Props) => {
               </h3>
               <div className={styles.tools}>
                 <span>
+                  <UserOutlined />
+                  作者：
+                  {item.author}
+                </span>
+                <span>
                   <ClockCircleOutlined />
                   创建时间：{formatTime(item.createdAt, 'YYYY-MM-DD HH:mm:ss')}
                 </span>
@@ -42,11 +47,11 @@ const ArticleList: ElementType = memo((props: Props) => {
                     );
                   })}
                 </ul>
-                <span>
-                  <UserOutlined />
-                  作者：
-                  {item.author}
-                </span>
+              </div>
+              <p>
+                <Link to={`/blog/detail/${item._id}`}>{item.description}</Link>
+              </p>
+              <div className={styles.tools}>
                 <span>
                   <HeartOutlined />
                   点赞：{item.liked}
@@ -56,9 +61,6 @@ const ArticleList: ElementType = memo((props: Props) => {
                   评论数：{item.comment.num}
                 </span>
               </div>
-              <p>
-                <Link to={`/blog/detail/${item._id}`}>{item.description}</Link>
-              </p>
             </Card>
           </li>
         );

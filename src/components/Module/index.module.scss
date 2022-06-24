@@ -7,14 +7,14 @@
   position: relative;
   &.isDivider {
     padding: calc($moduleSpacing + $contentSpacing) 0;
-    div[class~='ant-divider'] {
-      padding-bottom: $contentSpacing;
-    }
+    // div[class~='ant-divider'] {
+    //   padding-bottom: $contentSpacing;
+    // }
   }
-  div[class~='ant-divider'] {
+  > div[class~='ant-divider'] {
     margin: 0;
   }
-  h2 {
+  > h2 {
     font-size: 20px;
     text-align: center;
     line-height: 1;

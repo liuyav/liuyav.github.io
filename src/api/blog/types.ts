@@ -22,6 +22,7 @@ export interface Article {
   author: string;
   liked: number;
   comment: { num: number; list: string[] };
+  content: '';
 }
 
 export interface ArticleParams {

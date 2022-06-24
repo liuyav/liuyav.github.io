@@ -1,0 +1,53 @@
+@import '@/styles/variables.scss';
+
+.contentBox {
+  width: 100%;
+  padding: calc($contentSpacing / 2) $contentSpacing;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #252933;
+  }
+  .tools {
+    font-size: 10px;
+    color: #7e7a78;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $contentSpacing 0;
+    > span,
+    > ul {
+      margin-right: $moduleSpacing / 1.4;
+      &:nth-child(3) {
+        margin-right: calc($contentSpacing / 4);
+      }
+    }
+    span[role='img'] {
+      margin-right: calc($contentSpacing / 4);
+    }
+  }
+  .tags {
+    display: flex;
+  }
+}
+
+// 覆盖编辑器默认样式
+.vditor {
+  border: none !important;
+  overflow: initial;
+  padding-left: 0 !important;
+  h2,
+  h3 {
+    color: #333 !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  p {
+    line-height: 1.8;
+  }
+}
