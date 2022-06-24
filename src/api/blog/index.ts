@@ -1,6 +1,6 @@
 import request from '@/utils/request';
 import type { AxiosResponse } from 'axios';
-import { ClassifyTag, Classify, ArticleParams, ArticleResponse, Article } from './types';
+import { ClassifyTag, Classify, ArticleParams, ArticleResponse, Article, ArticleParamsByCondition } from './types';
 
 /**
  * 根据分类id查询分类
@@ -34,6 +34,7 @@ export const queryTags = async (params: { id: string }): Promise<AxiosResponse<C
  * @param params *pageSize 页码大小
  * @param params *classify 分类
  * @param params tag 标签
+ * @param params order 排序方式
  * @returns Article[]
  */
 export const queryArticleListByKeyword = async (params: ArticleParams): Promise<AxiosResponse<ArticleResponse>> => {
@@ -46,7 +47,7 @@ export const queryArticleListByKeyword = async (params: ArticleParams): Promise<
 
 /**
  * 根据文章id查询文章详情
- * @param params id
+ * @param params id 文章id
  * @returns Article
  */
 export const queryArticleDetail = async (params: { id: string }): Promise<AxiosResponse<Article>> => {
